@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className={`flex justify-between items-center w-full h-20 px-4 text-white fixed z-50 transition-all duration-300 ${scrolled ? 'bg-dark/80 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
-      <div>
+      <div className="hidden md:block">
         <h1 className="text-4xl font-bold font-signature ml-2 cursor-pointer relative group">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500 group-hover:from-blue-500 group-hover:to-primary transition-all duration-500">
             &lt; Yash Ghotekar /&gt;
@@ -51,7 +51,7 @@ const Navbar = () => {
         {/* Contact/Resume Button could go here */}
       </ul>
 
-      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-300 md:hidden">
+      <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 text-gray-300 md:hidden ml-auto">
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
