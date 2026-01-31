@@ -16,7 +16,7 @@ const Hero = () => {
   ];
 
   return (
-    <div name="home" className="min-h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 text-white pt-20 pb-10 overflow-hidden relative">
+    <div name="home" className="min-h-screen md:h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 text-white pt-20 pb-10 overflow-hidden relative">
       {/* Background Particles/blobs for dynamic feel */}
       <motion.div
         animate={{
